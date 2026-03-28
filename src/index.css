@@ -99,6 +99,34 @@
     margin-top: 10px;
   }
 }
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-wrap: wrap;
+    padding: 15px 20px;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-center {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+  }
+
+  .nav-center.active {
+    display: flex;
+  }
+
+  /* ❌ CACHER le bouton inscription hors menu */
+  .nav-right {
+    display: none;
+  }
+}
 
 /*-----------------FOOTER-----------*/
 .footer {
