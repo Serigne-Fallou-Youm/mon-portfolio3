@@ -1,0 +1,502 @@
+/*---------------------NAVBAR-------------*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #38bdf8;
+  
+}
+
+/* LOGO*/
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.logo h2 {
+  font-size: 20px;
+  color: white;
+
+}
+
+/* CENTRE */
+.nav-center {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-center a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.nav-center a:hover {
+  color: #38bdf8;
+}
+
+/* DROITE */
+.nav-right {
+  display: flex;
+}
+
+/* BOUTON INSCRIPTION */
+.btn-inscription {
+  padding: 8px 18px;
+  background: #38bdf8;
+  color: rgb(247, 243, 243);
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-inscription:hover {
+  background: #0ea5e9;
+}
+
+/*-----------------FOOTER-----------*/
+.footer {
+  background: #0ea5e9;
+  color: #e2e8f0;
+  text-align: center;
+  padding: 25px 10px;
+  margin-top: 0px;
+}
+
+/* TEXTE */
+.footer p {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.footer small {
+  display: block;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #0c0c0c;
+}
+
+
+/*----------HERO------------ */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 10%;
+  min-height: 90vh;
+}
+
+/* GAUCHE */
+.hero-left {
+  max-width: 500px;
+}
+
+.hero-left h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-left span {
+  color: #38bdf8;
+}
+
+.hero-left p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #cbd5f5;
+}
+
+/* BOUTON */
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #38bdf8;
+  color: black;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #0ea5e9;
+}
+
+/* DROITE */
+.hero-right img {
+  width: 350px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(11, 17, 17, 0.3);
+}
+/*-----------projets----------*/
+.projets {
+  padding: 50px 10%;
+  text-align: center;
+}
+
+.projets h1 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.projets-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+/* Card */
+.card {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+/* Overlay */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Titre dans overlay */
+.overlay h3 {
+  margin-bottom: 15px;
+}
+
+/* Boutons */
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 8px 14px;
+  background: #4f46e5;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #3730a3;
+}
+
+.btn.github {
+  background: #111;
+}
+
+.btn.github:hover {
+  background: #000;
+}
+
+/* Hover effects */
+.card:hover img {
+  transform: scale(1.1);
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+
+/*-----------------projetsdetails----------*/
+.details {
+  padding: 60px 10%;
+  text-align: center;
+  color: white;
+}
+
+/* Titre */
+.details h1 {
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+}
+
+/* Image */
+.details img {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 15px;
+  margin: 20px 0;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+/* Effet hover sur image */
+.details img:hover {
+  transform: scale(1.03);
+}
+
+/* Description */
+.details p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #cbd5f5;
+}
+
+/* Container effet carte */
+.details {
+  background: #0f172a;
+  min-height: 100vh;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .details h1 {
+    font-size: 2rem;
+  }
+
+  .details p {
+    font-size: 16px;
+  }
+}
+
+
+/*-----------------contacts----------*/
+.contact-page {
+  padding: 60px 10%;
+  background: #0f172a;
+  color: white;
+  min-height: 100vh;
+}
+
+.contact-page h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+
+/* Layout principal */
+.contact-wrapper {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+/* Colonne gauche */
+.contact-info {
+  flex: 1;
+  display: grid;
+  gap: 20px;
+}
+
+/* Colonne droite */
+.contact-form-box {
+  flex: 1;
+  background: #111827;
+  padding: 25px;
+  border-radius: 12px;
+}
+
+/* Cards */
+.contact-card {
+  background: #111827;
+  padding: 20px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.contact-card h3 {
+  color: #4f46e5;
+  margin-bottom: 8px;
+}
+
+.contact-card p {
+  color: #cbd5f5;
+}
+
+.contact-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Formulaire */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+.contact-form textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+.contact-form button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #4f46e5;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background: #3730a3;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .contact-wrapper {
+    flex-direction: column;
+  }
+}
+
+
+/*-----------------apropos----------*/
+.about-page {
+  padding: 60px 10%;
+  background: #0f172a;
+  color: white;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.about-page h1 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+/* Contenu */
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Image profil */
+.about-content img {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #4f46e5;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Effet hover image */
+.about-content img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+}
+
+/* Texte */
+.about-content p {
+  max-width: 600px;
+  text-align: left;
+  font-size: 17px;
+  line-height: 1.7;
+  color: #cbd5f5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-content p {
+    text-align: center;
+  }
+}
+
+
+
+/*-----------------inscription----------*/
+
+.signup-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #0f172a;
+  padding: 20px;
+}
+
+.signup-card {
+  background: #111827;
+  padding: 30px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.signup-card h1 {
+  margin-bottom: 20px;
+}
+
+/* Formulaire */
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Inputs */
+.signup-form input {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Bouton */
+.signup-form button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #4f46e5;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.signup-form button:hover {
+  background: #3730a3;
+}
