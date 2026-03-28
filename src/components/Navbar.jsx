@@ -23,13 +23,11 @@ function Navbar() {
         <Link to="/apropos" onClick={() => setOpen(false)}>À propos</Link>
         <Link to="/projets" onClick={() => setOpen(false)}>Projets</Link>
         <Link to="/contact" onClick={() => setOpen(false)}>Contact</Link>
-      </div>
-
-      <div className="nav-right">
         <Link to="/inscription" className="btn-inscription">
           Inscription
         </Link>
       </div>
+
 
     </nav>
   )

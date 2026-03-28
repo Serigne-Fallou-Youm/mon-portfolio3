@@ -170,7 +170,9 @@
 
 /* DROITE */
 .hero-right img {
-  width: 350px;
+  width: 100%;
+  max-width: 350px;
+  height: auto;
   border-radius: 20px;
   box-shadow: 0 0 30px rgba(11, 17, 17, 0.3);
 }
